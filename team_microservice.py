@@ -36,7 +36,7 @@ def get_weather(trigger: str, data: dict) -> float:
 
 
 def write_to_file(file: str, temp: float) -> None:
-    """Write the random number to the file so our program can read it.
+    """Write the temp to the file so our program can read it.
 
     Args: file(str): Name of the file we are writing to.
         temp (float): The temperature to write in the file.
