@@ -48,10 +48,11 @@ def write_to_file(file: str, temp: float) -> None:
 
 def Open_weather_API(city: str, units: str):
     base_url = "http://api.openweathermap.org/data/2.5/weather?"
-    api_key = "API KEY"  ###### TODO
-    url = base_url + "appid=" + api_key + "&q=" + city + "&units=" + units
-    response = requests.get(url).json()
-    return response
+    with open("API.txt", "r") as api_file:
+        api_key = api_file.readline().strip()  ###### TODO
+        url = base_url + "appid=" + api_key + "&q=" + city + "&units=" + units
+        response = requests.get(url).json()
+        return response
 
 
 def main():
