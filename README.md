@@ -9,13 +9,15 @@ An example of this will be shown below:
 
 ### Function Call (Provided by partner):
 ---
-<img width="1359" alt="image" src="https://github.com/vibrahim09/temp_microservice/assets/68801469/c6841eff-7883-4255-bb64-ee1351ea3d09">
+<img width="1340" alt="image" src="https://github.com/vibrahim09/temp_microservice/assets/68801469/400222b0-27d0-413a-963d-f859a91aec7e">
+
 
 
 
 ### Waether.txt file containing the command:
 ---
-<img width="571" alt="image" src="https://github.com/vibrahim09/temp_microservice/assets/68801469/1c114190-f53f-400e-852c-3b5bc70c1580">
+<img width="663" alt="image" src="https://github.com/vibrahim09/temp_microservice/assets/68801469/10acba71-ea72-4e55-b76f-4af0d38c8138">
+
 
 
 ---
@@ -28,7 +30,8 @@ https://github.com/vibrahim09/temp_microservice/blob/cbcb2cd63e38ea9a759788594ad
 
 Then, the service will write the temperature in imperial units to the Weather.txt file updating it in the process:
 
-<img width="589" alt="image" src="https://github.com/vibrahim09/temp_microservice/assets/68801469/7449f543-5e3d-4f31-b8c1-cb682ca9cbf7">
+<img width="662" alt="image" src="https://github.com/vibrahim09/temp_microservice/assets/68801469/b34e3481-0a03-4994-ab31-3e3699b1d14e">
+
 
 ---
 
