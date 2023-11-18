@@ -38,3 +38,9 @@ Then, the service will write the temperature in imperial units to the Weather.tx
 ## Receive Data
 
 To receive the data from this program, make sure to read the Weather.txt file once it has been updated. This will give you the current temperature of the city. 
+
+---
+### Basic UML 
+
+![image](https://github.com/vibrahim09/temp_microservice/assets/68801469/27baa50e-559b-431e-a907-1e48f8533255)
+
