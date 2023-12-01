@@ -1,5 +1,6 @@
 import requests
 import json
+import time
 
 
 def call_api_and_save_to_json(url: str, filename: str):
@@ -21,7 +22,6 @@ def call_api_and_save_to_json(url: str, filename: str):
     try:
         # Make the API request
         response = requests.get(url).json()
-
         json_Obj = json.dumps(response)
 
         with open(filename, "w") as file:
@@ -37,9 +37,22 @@ def call_api_and_save_to_json(url: str, filename: str):
 
 
 # Example usage:
+with open("APIKey.txt", "r") as file:
+    APIKey = file.readline().strip()
 base_url = "http://api.openweathermap.org/data/2.5/weather?"
-APIKey = ""
 api_url = base_url + "appid=" + APIKey + "&q=" + "PORTLAND"
 json_filename = "response.json"
 
-call_api_and_save_to_json(api_url, json_filename)
+
+# call_api_and_save_to_json(api_url, json_filename)
+
+while True:
+    time.sleep(1)
+    f = open("Request.txt", "r+")
+    ReadData = f.readline().strip()
+    if ReadData == "run":
+        call_api_and_save_to_json(api_url, json_filename)
+        f.seek(0)
+        f.truncate(0)
+        f.close()
+    f.close()
